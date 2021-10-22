@@ -1,5 +1,7 @@
 import useServiceWorker from '@/hooks/useServiceWorker';
-import { createGlobalStyle } from 'styled-components';
+import { Provider } from 'react-redux';
+import store from '@/redux';
+import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,8 +14,10 @@ export default function IndexPage() {
   useServiceWorker()
 
   return (
-    <main>
-      <GlobalStyle />
-    </main>
+    <Provider store={store}>
+      <main>
+        <GlobalStyle/>
+      </main>
+    </Provider>
   );
 }
