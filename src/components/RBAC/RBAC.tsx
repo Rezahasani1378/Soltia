@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { selectUser } from '@/redux/slices/User';
+import { selectUser } from '../../redux/slices/User';
 
 const RBAC = ({
   allowedRoles,
