@@ -1,5 +1,6 @@
 import useServiceWorker from '@/hooks/useServiceWorker';
 import Navigation from '@/components/Navigation/Navigation';
+import SearchBox from '@/components/Search/SearchBox';
 import { Provider } from 'react-redux';
 import store from '@/redux';
 import {createGlobalStyle} from 'styled-components';
@@ -19,6 +20,7 @@ export default function IndexPage() {
       <main>
         <GlobalStyle/>
         <Navigation />
+        <SearchBox />
       </main>
     </Provider>
   );
