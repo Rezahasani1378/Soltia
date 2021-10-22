@@ -1,0 +1,47 @@
+{
+  "users": {
+    "data": [
+      {
+        "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.Reza.refresh",
+        "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.Reza.access",
+        "id": 32,
+        "username": "Reza",
+        "email": "reza.hasani7899@gmail.com",
+        "full_name": "Reza Hasani",
+        "password": "123456",
+        "message": "Logged In Successfully!",
+        "accessibility": "ordinary"
+      },
+      {
+        "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.Charbel.refresh",
+        "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.Charbel.access",
+        "id": 21,
+        "username": "Charbel",
+        "email": "charbel@soltia.com",
+        "full_name": "Charbel Malki",
+        "password": "123456",
+        "message": "Logged In Successfully!",
+        "accessibility": "premium"
+      },
+      {
+        "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.Robert.refresh",
+        "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.Robert.access",
+        "id": 73,
+        "username": "Robert",
+        "email": "robert@soltia.com",
+        "full_name": "Robert",
+        "password": "123456",
+        "message": "Logged In Successfully!",
+        "accessibility": "staff"
+      }
+    ],
+    "error": "password is incorrect, please try again."
+  },
+  "refresh": {
+    "data": {
+      "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.newAccess",
+      "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.newRefresh"
+    },
+    "error": "Your access token is expired!"
+  }
+}
