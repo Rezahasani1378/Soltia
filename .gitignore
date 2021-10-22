@@ -20,3 +20,5 @@
 typings.d.ts
 .editorconfig
 mock/.gitkeep
+*.xml
+*.iml
