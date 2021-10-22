@@ -21,13 +21,22 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "axios": "^0.23.0",
+    "axios-mock-adapter": "^1.20.0",
     "react": "17.x",
     "react-dom": "17.x",
+    "react-redux": "^7.2.5",
+    "react-toastify": "^8.0.3",
+    "redux-logger": "^3.0.6",
+    "styled-components": "^5.3.1",
     "umi": "^3.5.20"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/redux-logger": "^3.0.9",
+    "@types/styled-components": "^5.1.15",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.5.20",
     "lint-staged": "^10.0.7",
