@@ -4,6 +4,7 @@ import SearchBox from '@/components/Search/SearchBox';
 import { Provider } from 'react-redux';
 import store from '@/redux';
 import {createGlobalStyle} from 'styled-components';
+import { ToastContainer } from 'react-toastify';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -21,6 +22,7 @@ export default function IndexPage() {
         <GlobalStyle/>
         <Navigation />
         <SearchBox />
+        <ToastContainer />
       </main>
     </Provider>
   );
