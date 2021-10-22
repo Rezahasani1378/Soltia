@@ -1,12 +1,19 @@
-import styles from './index.less';
 import useServiceWorker from '@/hooks/useServiceWorker';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: Poppins, serif;
+    color: #3c4859;
+  }
+`;
 
 export default function IndexPage() {
   useServiceWorker()
 
   return (
-    <div>
-      <h1 className={styles.title}>Page index</h1>
-    </div>
+    <main>
+      <GlobalStyle />
+    </main>
   );
 }
