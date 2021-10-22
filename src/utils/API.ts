@@ -173,3 +173,17 @@ export function users_token_refresh_create(refreshToken: string) {
       return err.response !== undefined ? err.response.status : err;
     });
 }
+
+export function searchAPI(letters: string) {
+  return defaultApi({
+    method: 'get',
+    url: `${baseURL}/sug?s=${letters}`,
+  })
+    .then((res) => {
+      return res;
+    })
+    .catch((err) => {
+      return err.response !== undefined ? err.response.status : err;
+    });
+}
+
