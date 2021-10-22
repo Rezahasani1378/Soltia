@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import { makeScrollOfPage } from '@/utils/functions';
 
 const ModalContainer = styled.div`
   animation: 0.05s blur-animation ease;
@@ -54,6 +55,9 @@ const Modal = ({
     | null
     | undefined;
 }) => {
+  useEffect(() => {
+    makeScrollOfPage(!isOpen);
+  }, [isOpen]);
 
   const handleClose = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const target = event.target as HTMLTextAreaElement;
