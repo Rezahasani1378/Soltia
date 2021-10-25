@@ -1,5 +1,5 @@
 let CACHE_NAME = 'Soltia Cache V1.0.0';
-let urlsToCache = ['/'];
+let urlsToCache = ['/', '/challenge'];
 let isOnline = true;
 let version = 1;
 
