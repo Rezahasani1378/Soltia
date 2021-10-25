@@ -1,4 +1,4 @@
-import { defineConfig } from 'umi';
+import {defineConfig} from 'umi';
 
 export default defineConfig({
   favicon:
@@ -8,14 +8,21 @@ export default defineConfig({
   },
   routes: [
     {
+      exact: false,
       path: '/',
-      component: 'Home',
-      title: 'Soltia – A home for amazing people with amazing skills',
-    },
-    {
-      path: '/challenge',
-      component: 'ButtonChallenge',
-      title: 'Soltia Button Challenge',
+      component: '@/layouts',
+      routes: [
+        {
+          path: '/',
+          component: 'Home',
+          title: 'Soltia – A home for amazing people with amazing skills',
+        },
+        {
+          path: '/challenge',
+          component: 'ButtonChallenge',
+          title: 'Soltia Button Challenge',
+        }
+      ]
     }
   ],
   styles: [
