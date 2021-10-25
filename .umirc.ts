@@ -9,9 +9,14 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      component: '@/pages/index',
+      component: 'Home',
       title: 'Soltia – A home for amazing people with amazing skills',
     },
+    {
+      path: '/challenge',
+      component: 'ButtonChallenge',
+      title: 'Soltia Button Challenge',
+    }
   ],
   styles: [
     `https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap`,
