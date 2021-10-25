@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 import styled from 'styled-components'
 
 const Button = styled.button`
@@ -32,9 +33,11 @@ const Button = styled.button`
 `
 
 const ButtonChallenge = () => {
-  return (
-    <Button>Delete</Button>
-  )
+  const handleClick = () => {
+    toast.success('Clicked on the button!', { position: 'top-center' });
+  }
+
+  return <Button onClick={() => handleClick()}>Delete</Button>
 }
 
 export default ButtonChallenge
